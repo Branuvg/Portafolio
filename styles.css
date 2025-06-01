@@ -139,25 +139,14 @@ p {
 }
 
 /* Elementos temáticos */
-.mario-theme {
-    background: radial-gradient(circle at 10% 20%, rgba(173, 20, 18, 0.05) 0%, rgba(10, 25, 47, 0) 30%);
-}
-
 .celeste-theme {
-    background: radial-gradient(circle at 90% 20%, rgba(157, 101, 201, 0.05) 0%, rgba(10, 25, 47, 0) 30%);
+    background: radial-gradient(circle at 50% 50%, rgba(158, 101, 201, 0.808) 0%, rgba(10, 25, 47, 0) 30%);
 }
 
 .f1-theme {
-    background: radial-gradient(circle at 50% 80%, rgba(225, 6, 0, 0.05) 0%, rgba(10, 25, 47, 0) 40%);
+    background: radial-gradient(circle at 50% 50%, rgba(225, 7, 0, 0.842) 0%, rgba(10, 25, 47, 0) 30%);
 }
 
-.db-theme {
-    background: radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.05) 0%, rgba(10, 25, 47, 0) 40%);
-}
-
-.spiderman-theme {
-    background: radial-gradient(circle at 80% 80%, rgba(177, 19, 19, 0.05) 0%, rgba(10, 25, 47, 0) 40%);
-}
 
 .theme-element {
     position: absolute;
