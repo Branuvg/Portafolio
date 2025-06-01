@@ -3,22 +3,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const parallaxElements = document.querySelectorAll('.parallax-element');
     const parallaxBg = document.querySelector('.parallax-bg');
     
+    // Reemplaza todo el evento scroll del parallax
     window.addEventListener('scroll', function() {
         const scrollPosition = window.pageYOffset;
+        const windowHeight = window.innerHeight;
         
-        // Mover elementos con diferentes velocidades
-        parallaxElements.forEach(function(element, index) {
-            const speed = 0.1 + (index * 0.05);
-            const yPos = -(scrollPosition * speed);
-            const xPos = index % 2 === 0 ? scrollPosition * speed * 0.5 : -scrollPosition * speed * 0.5;
-            
-            element.style.transform = `translate(${xPos}px, ${yPos}px)`;
-        });
-        
-        // Efecto parallax para el fondo
+        // Efecto de zoom en el fondo
         if (parallaxBg) {
-            parallaxBg.style.transform = `translateY(${scrollPosition * 0.3}px)`;
+            const bgSize = 100 + (scrollPosition * 0.1);
+            parallaxBg.style.backgroundSize = `${bgSize}%`;
         }
+        
+        // Overlay dinámico
+        const parallaxOverlay = document.querySelector('.parallax-overlay');
+        if (parallaxOverlay) {
+            const opacity = Math.min(scrollPosition * 1.7 / windowHeight, 0.7);
+            parallaxOverlay.style.opacity = opacity;
+        }
+        
+        // Efecto en elementos flotantes (opcional)
+        parallaxElements.forEach((element, index) => {
+            const speed = 0.05 + (index * 0.02);
+            const yPos = -(scrollPosition * speed);
+            element.style.transform = `translateY(${yPos}px)`;
+        });
     });
     
     // Navegación suave

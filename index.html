@@ -11,11 +11,13 @@
     <!-- Animación Parallax -->
     <section class="parallax-section">
         <div class="parallax-bg"></div>
+        <div class="parallax-overlay"></div> <!-- Nuevo elemento overlay -->
+
         
         <div class="parallax-element float" style="top: 15%; left: 10%; font-size: 5rem;">🍄</div>
         <div class="parallax-element float" style="top: 25%; right: 15%; font-size: 4rem; animation-delay: 0.5s;">🐉</div>
         <div class="parallax-element float" style="bottom: 20%; left: 20%; font-size: 6rem; animation-delay: 1s;">🏁</div>
-        <div class="parallax-element float" style="bottom: 30%; right: 10%; font-size: 5rem; animation-delay: 1.5s;">🕷️</div>
+        <div class="parallax-element float" style="bottom: 30%; right: 10%; font-size: 5rem; animation-delay: 1.5s;">❄️</div>
         <div class="parallax-element float" style="top: 40%; left: 45%; font-size: 7rem; animation-delay: 2s;">🎾</div>
         
         <div class="parallax-content">
@@ -46,14 +48,13 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>Sobre Mí</h2>
-                    <p>¡Hola! Soy Gabriel Bran, un apasionado desarrollador web con un amor especial por la creación de experiencias digitales impactantes y funcionales. Mi pasión por la tecnología se combina con mi amor por los videojuegos, especialmente los clásicos como Super Mario.</p>
-                    <p>Mi viaje en el desarrollo web comenzó hace varios años, y desde entonces he estado perfeccionando mis habilidades en frontend, backend y diseño de interfaces de usuario. Me encanta resolver problemas complejos con soluciones elegantes y eficientes.</p>
-                    <p>Cuando no estoy codificando, probablemente me encontrarás jugando videojuegos (¡especialmente plataformas como Mario y Celeste!), viendo carreras de Fórmula 1, disfrutando de Dragon Ball o leyendo cómics de Spiderman. Estas pasiones a menudo inspiran mi creatividad en el desarrollo.</p>
+                    <p>¡Hola! Soy Gabriel Bran Bolaños, un estudiante en la Universidad del Valle de Guatemala, aprendiendo todo lo que pueda sobre la computación y la codificación, pero soy mas que eso y te vengo a enseñar quien soy yo. Nací en Guatemala y Estudie en el Colegio Centro Escolar El Roble, con una pasión por las matemáticas y con la tecnología en si, mi sueño es poder llegar a ser un programador de videojuegos ya que además de horas de diversión, los videojuegos (aunque pueda ser algo muy nicho) me han enseñado mucho y quiero poder alegrarle el día a alguien y si se llevan algo para aprender y expandir sus conocimientos y curiosidad, mejor.</p>
+                    <p>Como lo mencione antes me gustan muchos los videojuegos, especialmente los plataformeros como Mario y Celeste, pero fuera de la computadora también me gustan hacer otras cosas como escalar volcanes, ver formula 1, jugar tennis, como se puede ver en la foto a la par mía, quiero aprender mas cosas, como tocar un instrumento (actualmente el ukulele) o hacer speedruns.</p>
+                    <p>Por el momento no se mucho sobre programar videojuegos, pero si tengo experiencia en la programación como tal, en paginas web he estado perfeccionando mis habilidades en frontend, backend y diseño de interfaces de usuario. También como me interesan muchos las mates, actualmente estoy intentando ser auxiliar de las clases que pueda en mi Universidad así no pierdo esos conocimientos y conozco gente nueva.</p>
                     <a href="#contact" class="btn">Contáctame</a>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Gabriel Bran">
-                    <div class="mario-detail">M</div>
+                    <img src="yo_tennis.jpg">
                 </div>
             </div>
         </div>
@@ -63,17 +64,16 @@
     <section id="skills" class="f1-theme f1-pattern">
         <div class="container">
             <h2>Mis Habilidades</h2>
-            <div class="f1-detail"></div>
             <div class="skills-container">
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                    <h3 class="skill-name">HTML5</h3>
+                    <h3 class="skill-name">HTML</h3>
                     <p>Maquetación semántica y accesible para todo tipo de dispositivos.</p>
                 </div>
                 
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                    <h3 class="skill-name">CSS3</h3>
+                    <h3 class="skill-name">CSS</h3>
                     <p>Estilos avanzados, animaciones y diseño responsivo.</p>
                 </div>
                 
@@ -111,52 +111,46 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Plataforma de E-commerce">
-                        <div class="celeste-detail"></div>
+                        <img src="calc.png">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Plataforma de E-commerce</h3>
-                        <p>Tienda online completa con carrito de compras, pasarela de pago y panel de administración.</p>
+                        <h3 class="project-title">Calculadora Frontend</h3>
+                        <p>Una Calculadora usando React y Vite solo usando el frontend</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Vite</span>
                         </div>
-                        <a href="#" class="btn">Ver Proyecto</a>
+                        <a href="https://calicheoficial.lat/Bran/calc/" class="btn">Ver Proyecto</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Aplicación de Gestión">
-                        <div class="celeste-detail"></div>
+                        <img src="pool.png">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Sistema de Gestión de Tareas</h3>
-                        <p>Aplicación para organizar proyectos con seguimiento de tiempo, asignación de tareas y reportes.</p>
+                        <h3 class="project-title">Pool Center</h3>
+                        <p>Creamos una pagina web para una empresa guatemalteca de piscinas, para marketing, generada con React y Vite</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
                         </div>
-                        <a href="#" class="btn">Ver Proyecto</a>
+                        <a href="https://poolcenter.com.gt/" class="btn">Ver Proyecto</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="App de Viajes">
-                        <div class="celeste-detail"></div>
+                        <img src="sans.png">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Guía de Viajes Interactiva</h3>
-                        <p>Plataforma para descubrir destinos con mapas interactivos, itinerarios personalizados y reseñas.</p>
+                        <h3 class="project-title">Sans</h3>
+                        <p>Inicisos de Css, basado en uno de mis personajes favoritos de los videojuegos, Undertale</p>
                         <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Leaflet.js</span>
-                            <span class="tech-tag">API Rest</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
                         </div>
-                        <a href="#" class="btn">Ver Proyecto</a>
+                        <a href="https://calicheoficial.lat/Bran/Lab4_Web/lab_4.html" class="btn">Ver Proyecto</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +168,7 @@
                         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h3>Email</h3>
-                            <p>gabriel.bran@ejemplo.com</p>
+                            <p>gabrielbranb@gmail.com</p>
                         </div>
                     </div>
                     
@@ -182,7 +176,7 @@
                         <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <div>
                             <h3>Teléfono</h3>
-                            <p>+1 (123) 456-7890</p>
+                            <p>(+502) 4265 1703</p>
                         </div>
                     </div>
                     
@@ -190,7 +184,7 @@
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
                             <h3>Ubicación</h3>
-                            <p>Ciudad, País</p>
+                            <p>Guatemala Guatemala</p>
                         </div>
                     </div>
                     
@@ -198,7 +192,7 @@
                         <div class="contact-icon"><i class="fab fa-github"></i></div>
                         <div>
                             <h3>GitHub</h3>
-                            <p>github.com/gabrielbran</p>
+                            <p>github.com/Branuvg</p>
                         </div>
                     </div>
                 </div>
@@ -237,12 +231,11 @@
         <div class="db-detail"></div>
         <div class="container">
             <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Branuvg" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-bran-b88158278/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/gabrielbranb/" class="social-link"><i class="fab fa-instagram"></i></a>
             </div>
-            <p class="copyright">© 2023 Gabriel Bran. Todos los derechos reservados.</p>
+            <p class="copyright">© 2025 Gabriel Bran. Todos los derechos reservados.</p>
         </div>
     </footer>
     
